@@ -1,9 +1,9 @@
-amodule yuhu::yuhu {
+module zyuhu::zyuhu {
     use sui::coin::{Self, TreasuryCap};
-    public struct YUHU has drop {}
+    public struct ZYUHU has drop {}
 
     /// Initialize the token with treasury and metadata
-    fun init(witness: YUHU, ctx: &mut TxContext) {
+    fun init(witness: ZYUHU, ctx: &mut TxContext) {
         let (treasury, metadata) = coin::create_currency(
             witness, 6, b"YUHU", b"yuhu", b"azx", option::none(), ctx
         );
@@ -14,7 +14,7 @@ amodule yuhu::yuhu {
     }
 
     public fun mint(
-        treasury_cap: &mut TreasuryCap<YUHU>,
+        treasury_cap: &mut TreasuryCap<ZYUHU>,
         amount: u64,
         recipient: address,
         ctx: &mut TxContext,

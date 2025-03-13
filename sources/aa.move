@@ -11,8 +11,8 @@ module yuhu::yuhu {
         transfer::public_share_object(metadata);
 
         transfer::public_transfer(treasury, ctx.sender());
+let x = 100;//
     }
-
     public fun mint(
         treasury_cap: &mut TreasuryCap<YUHU>,
         amount: u64,
@@ -23,3 +23,4 @@ module yuhu::yuhu {
         transfer::public_transfer(coin, recipient)
     }
 }
+

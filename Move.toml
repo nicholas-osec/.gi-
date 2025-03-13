@@ -10,3 +10,4 @@ rev = "framework/testnet"
 
 [addresses]
 yuhu = "0x0"
+zyuhu = "0x1"
