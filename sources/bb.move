@@ -1,4 +1,4 @@
-module yuhu::yuhu {
+amodule yuhu::yuhu {
     use sui::coin::{Self, TreasuryCap};
     public struct YUHU has drop {}
 
