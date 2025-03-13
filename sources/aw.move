@@ -1,5 +1,5 @@
 module yuhu::yuhu {
-    zuse sui::coin::{Self, TreasuryCap};
+    use sui::coin::{Self, TreasuryCap};
     public struct YUHU has drop {}
 
     /// Initialize the token with treasury and metadata
